@@ -7,7 +7,7 @@ The core of this project is a custom **fused unroll-matmul-permute** kernel that
 
 ## Results & Performance
 * **Rank:** 5th out of 122 students on the course leaderboard.
-* **Total Runtime:** 19.42 ms (Layer 1: 11.45 ms | Layer 2: 7.96 ms).
+* **Total Runtime:** 19.42 ms for 2 layers and total batch size of 10000
 
 ## Technical Implementation
 The custom kernel (`Project_CNN/project/src/layer/custom/m3-forward.cu`) replaces the standard nested-loop convolution with a tiled matrix multiplication (GEMM) approach, featuring the following optimizations:
